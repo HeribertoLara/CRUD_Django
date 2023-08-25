@@ -1,0 +1,10 @@
+{% extends 'layouts/base.html' %}
+{% block content %}
+
+hola {{ project }}
+<ul>
+    {% for task in tasks %}
+        <li>{{ task }}</li>
+    {% endfor %}
+</ul>
+{%endblock%}
